@@ -5,6 +5,10 @@
 // для перевірки коректності її роботи.У консоль будуть виведені результати її викликів.
 
 function calcAverageCalories(days) {
+  if (days.length === 0) {
+    return 0;
+  }
+
   let totalCalories = 0;
 
   for (const day of days) {
